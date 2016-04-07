@@ -99,11 +99,7 @@ int main( int argc, char **argv ) {
   RAIO_SetRegister(CURV0, 0x20);
   RAIO_SetRegister(CURV1, 0x01);
   TFT_RegWrite( MRWC );
-<<<<<<< HEAD
   // TFT_DataWrite( 'A' );   // Produces a capital "A" at the end of line 3
-=======
- // TFT_DataWrite( 'A' );      // Wrights an A on the Display - removed
->>>>>>> patch-1
 
   cursor_x.split.low = (uint8_t) RAIO_GetRegister(RCURH0);
   cursor_x.split.high = (uint8_t) RAIO_GetRegister(RCURH01);
